@@ -9,7 +9,7 @@
 
     .collapse.navbar-collapse
       %ul.nav.navbar-nav
-        - if current_user && current_user.is_admin
+        - if current_user
           %li
             = link_to admin_projects_path do
               Admin
